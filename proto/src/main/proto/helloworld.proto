@@ -20,6 +20,7 @@ message UserDetails {
   string username = 1;
   string email = 2;
   Address address = 3;
+  string mobile = 4;
 }
 
 message Address {
