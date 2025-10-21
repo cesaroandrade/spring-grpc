@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM gradle:8.5.0-jdk17-focal AS build
+FROM gradle:8.5.0-jdk21-focal AS build
 
 # Set the working directory
 WORKDIR /home/gradle/project
@@ -14,7 +14,7 @@ RUN gradle :rest-server:clean build --no-daemon
 FROM amazoncorretto:25-alpine AS runtime
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /app23
 
 # Copy the built server JAR from the build stage
 COPY --from=build /home/gradle/project/rest-server/build/libs/*.jar rest-server.jar
