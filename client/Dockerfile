@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM gradle:8.5.0-jdk17-focal AS build
+FROM gradle:8.5.0-jdk25-focal AS build
 
 # Set the working directory
 WORKDIR /home/gradle/project
