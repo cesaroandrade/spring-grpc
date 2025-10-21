@@ -18,7 +18,7 @@ public class TestService {
     private final UserGrpcClient userGrpcClient;
     private final UserRestClient userRestClient;
 
-    private static final int BATCH_SIZE = 10000;
+    private static final int BATCH_SIZE = 20000;
     private static final int MAX_CONCURRENT_REQUESTS = 100;
 
     public String runPerformanceTest(int requestCount, int itemCount) {
