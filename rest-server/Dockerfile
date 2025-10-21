@@ -11,7 +11,7 @@ COPY . .
 RUN gradle :rest-server:clean build --no-daemon
 
 # Stage 2: Run
-FROM amazoncorretto:17-alpine AS runtime
+FROM amazoncorretto:25-alpine AS runtime
 
 # Set the working directory
 WORKDIR /app
