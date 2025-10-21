@@ -3,4 +3,4 @@ spring:
     name: rest-server
 
 server:
-  port: 8081
+  port: 8080
