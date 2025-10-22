@@ -6,7 +6,7 @@ grpc:
   client:
     grpc-server:
       address: "static://grpc-server:9090"
-      negotiationType: plaintext
+      negotiationType: plaintext2
 
 rest:
   client:

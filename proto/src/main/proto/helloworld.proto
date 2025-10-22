@@ -21,6 +21,7 @@ message UserDetails {
   string email = 2;
   Address address = 3;
   string mobile = 4;
+  string  age = 5;
 }
 
 message Address {
